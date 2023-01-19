@@ -54,18 +54,31 @@ const submitForm = async (form, url) => {
    
     if (notEmpty && editId) {
       await putDataFetch(url, propertyInfo);
-           window.location.href = "../index.html";
+      Swal.fire(
+        'Nice!',
+        'Your property has been updated!',
+        'success'
+      ).then(()=>{
+        window.location.href = "../index.html";
+      })
+          // window.location.href = "../index.html";
    
     }
 
     if (notEmpty && !editId) {
       await postDataFetch(url, propertyInfo);
-
+      Swal.fire(
+        'Nice!',
+        'Your property has been added!',
+        'success'
+      ).then(()=>{
         valuesForm.forEach((input) => {
           if (input.id) {
             input.value = "";
           }
         });
+      })
+        
     
     }
   });

@@ -66,6 +66,12 @@ document.addEventListener("click", async (event) => {
             await deleteDataFetch(urlDelete);
             properties = await getDataFetch(urlProperties);
             printCards(propertiesContainer, properties);
+            Swal.fire(
+              'Deleted!',
+              'Your property has been deleted.',
+              'success'
+            )
+            
           } catch (error) {
             console.log(error);
           }
@@ -86,6 +92,12 @@ document.addEventListener("click", async (event) => {
     if (favorite.length === 0 && Object.entries(favoriteProperty).length) {
       await postDataFetch(urlFavorites, favoriteProperty);
       const data = await getDataFetch(urlFavorites);
+      Swal.fire(
+        'Nice!',
+        'This property has been added to favorites!',
+        'success'
+      )
+
       console.log(data);
       
     }

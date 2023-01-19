@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/stylesIndex.css">
+    <title>Casa Royal</title>
+</head>
+<body>
+    <header>
+        <section class="header_contact">
+            <div class="contact_info">
+                <p>1441 Market St. San Francisco</p>
+                <p>(123)456-789</p>
+                <p>Mon-Sun:8:00am - 6:00pm</p>
+            </div>
+            <div class="login">
+                <p>LOGIN/REGISTER</p>
+            </div>
+        </section>
+        <nav class="navbar">
+            <section>
+                <div class="title">
+                    <figure class="nav_figure">
+                        <img src="./img/logo.png" alt="Logo casa royal">
+                    </figure>
+                    <h1>casa<span>Royal</span></h1>
+                </div>
+                
+                <div class="options">
+                    <ul>
+                        <li><a href="#">HOMEPAGE</a></li>
+                        <li><a href="./pages/form.html">ADD</a></li>
+                        <li><a href="./pages/favorites.html">FAVORITES</a></li>         
+                    </ul>
+                </div>
+            </section>
+            
+        
+            <p>SUBMIT LISTING</p>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="dashboard-text">
+                <h2>Let Us Guide You Home</h2>
+                <p>Find the house of your dreams</p>
+            </div>
+
+            <div class="search">
+                <section class="form">
+                    
+                    <input type="search" placeholder="Search for properties" id="searchInput">
+                    <button >FIND PROPERTIES</button>
+                </section>
+                
+                    <section class="filters">
+                        <button id="all">All</button>
+                        <button id="apartment">Apartment</button>
+                        <button id="house">House</button>
+                        <button id="studio">Studio</button>
+                        <button id="farm">Farm</button>
+                        <button id="commercial">Commercial</button>
+                        
+                    </section>
+                </div>
+          
+        </section>
+
+        <section class="properties-section">
+            <h4>CASAROYAL REAL ESTATE AGENCY</h4>
+            <h2><span>Featured</span> Properties</h2>
+
+            <div class="properties_container">
+                <article class="property">
+                    <figure class="property_img">
+                        <img src="./img/property.jfif" alt="Property image" class="property_image">
+                    </figure>
+                    <p class="type">HOUSE</p>
+                    <p class="status">FOR SALE</p>
+                    <p class="price">$320,000.00</p>
+            
+                    <div class="property-info">
+                            <p class="location">Beverly Hills, CA</p>
+                            <h4 class="name">272 S Rexford Dr, Beverly Hills, CA 90212, USA</h4>
+                            <p class="owner"> <img src="./img/profile.png" alt=""> Hellen Mattis</p>
+                            <p class="time">4 months ago</p>
+                            
+                            <div class="subdiv">
+                                <p class="area"><img src="./img/area.jfif" alt=""><span>2400</span> Sq Ft</p>
+                                <ul>
+                                    <li><img src="./img/car.jfif" alt="">2</li>
+                                    <li><img src="./img/bath.jfif" alt="">3</li>
+                                    <li><img src="./img/bed.jfif" alt="">3</li>
+                                </ul>
+                            </div>
+
+                        
+                            <button><img src="./img/trash.png" name="" class="delete"></button> 
+                            <button><img src="./img/star.png" name="" class="favorite"></button> 
+                            <button><img src="./img/edit.png" name="" class="edit"></button> 
+                        </div>
+                </article>
+        
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./scripts/index.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
